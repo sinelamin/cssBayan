@@ -98,3 +98,36 @@ body::-webkit-scrollbar {
   max-width: 100%;
 }
 
+@media (hover: hover) {
+  .accordion:hover {
+    color: #000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .accordion:hover>.accordion-item>.accordion-item__trigger>.wrapper>.accordion-icon__status {
+    display: block;
+    animation-name: mem-show;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+
+  .accordion-item__trigger:hover>.accordion-item__mem,
+  .accordion-item__mem:hover,
+  .wrapper {
+    display: flex;
+    cursor: pointer;
+    animation-name: mem-show;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  .accordion-item__trigger:hover>.wrapper>.accordion-icon__status {
+    transform: rotate(45deg);
+    transition: all 0.7s ease 0s;
+  }
+
+  .accordion-icon__status {
+    display: none;
+  }
+}
