@@ -131,3 +131,31 @@ body::-webkit-scrollbar {
     display: none;
   }
 }
+
+@media (min-width: 819px) {
+  .accordion-title {
+    font-size: 2.5rem;
+  }
+
+  .accordion-item__title {
+    font-size: 1.5rem;
+  }
+
+  .accordion-icon__status {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 1919px) {
+  .accordion-title {
+    font-size: 3.5rem;
+  }
+
+  .accordion-item__title {
+    font-size: 2rem;
+  }
+
+  .accordion-icon__status {
+    width: 4rem;
+  }
+}
